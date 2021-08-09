@@ -1,0 +1,126 @@
+body {
+    background-color: #1a5a8e;
+}
+.bg-image {
+    background-image: url('../img/background.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    opacity: 0.3;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.navbar {
+    z-index: 1;
+}
+
+.map {
+    height: 100%;
+}
+#theme {
+    transform: translateY(5px);
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #222;
+    color: antiquewhite;
+    padding: 5px;
+    z-index: 2;
+}
+.hidden {
+    display: none;
+}
+.shown {
+    display: block;
+}
+#prefs {
+    margin-left: 32%;
+}
+img {
+    max-width: 90%;
+    height: 200px;
+}
+#map {
+    height: 65vh;
+    width: 70%;
+    border-radius: 4px;
+}
+.h-65vh {
+    height: 65vh;
+}
+.w-60p {
+    width: 60%;
+}
+.w-0 {
+    width: 0;
+}
+.custom-map-control-button {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    height: 40px;
+    cursor: pointer;
+}
+.custom-map-control-button:hover {
+    background: #ebebeb;
+}
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+#center-btn {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    margin-bottom: 22px;
+}
+
+#center-btn-img {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-image: url('https://icon-library.com/images/my-location-icon/my-location-icon-22.jpg');
+    background-size: cover;
+    z-index: 1000;
+}
+
+@media (max-width: 900px) {
+    .map-list {
+        height: unset;
+    }
+
+    .flex-row {
+        flex-direction: column !important;
+    }
+    #map {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn-group {
+        height: 4em;
+    }
+    .btn-group > button:first-child {
+        margin-left: 0 !important;
+        font-size: 2rem;
+    }
+}

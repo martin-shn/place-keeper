@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Maps Keeper</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="https://img.icons8.com/ios-glyphs/30/000000/map--v2.png" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+        <link href="css/animation.css" rel="stylesheet" />
+    </head>
+    <body class="pt-5 pb-5" onload="onIndexInit()">
+        <!-- <img src="img/background.jpg" class="bg-image" /> -->
+
+        <!-- Responsive navbar-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Maps Keeper</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="map.html">Maps</a></li>
+                        <li class="nav-item"><a class="nav-link" href="user-prefs.html">Preferences</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#" onclick="deleteAllData()">Delete all data</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <section class="container">
+            <header class="text-center mt-5 text-warning">
+                <h1 class="userPrefChangable">Keep all your loved places in mind</h1>
+                <p class="lead fw-light userPrefChangable">Store all your places in local storage.</p>
+            </header>
+
+            <main class="main text-center mt-5">
+                <div class="animate anim-container"></div>
+                <a href="map.html"><img src="img/img.jpg" /></a>
+                <p>Click on the map to save your new favorite</p>
+            </main>
+        </section>
+
+        <footer class="footer">CoffeeRight &copy; Martin Sh.</footer>
+        <div class="bg-image"></div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/storageService.js"></script>
+        <script src="js/userPrefService.js"></script>
+        <script src="js/placeService.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
