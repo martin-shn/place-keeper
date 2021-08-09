@@ -122,6 +122,6 @@ img {
     }
     .btn-group > button:first-child {
         margin-left: 0 !important;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
