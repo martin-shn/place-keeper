@@ -112,7 +112,7 @@ img {
         flex-direction: column !important;
     }
     #map {
-        height: 60vh;
+        height: 50vh;
         width: 100%;
         margin-bottom: 10px;
     }
